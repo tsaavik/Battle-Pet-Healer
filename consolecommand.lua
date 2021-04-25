@@ -6,14 +6,14 @@
 local EventFrame = CreateFrame("frame", "EventFrame")
 EventFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
 
+local function healpets()
+   ConsoleExec( "/cast Revive Battle Pets" )
+   --CastSpellByName("Revive Battle Pets");
+end
+
 EventFrame:SetScript("OnEvent", function(self, event, ...)
    if(event == "PLAYER_ENTERING_WORLD") then
       C_Timer.After(120, healpets)
    end
 end)
-
-local function healpets()
-   ConsoleExec( "/cast Revive Battle Pets" )
-   --CastSpellByName("Revive Battle Pets");
-end
 
