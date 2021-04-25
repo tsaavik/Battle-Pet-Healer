@@ -1,0 +1,9 @@
+## Last updated @file-date-iso@
+## Interface: 90005
+## Version: 1.0
+## Title: Battle Pet Healer
+## Notes: Heals battle pets asap after logon, super minimal addon.
+## Author: Tsaavik (Gnoballs @Greymane)
+## DefaultState: enabled
+
+consolecommand.lua
